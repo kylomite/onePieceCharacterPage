@@ -1,0 +1,14 @@
+body{
+    background-color: maroon;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.character img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 5px solid goldenrod;
+    box-shadow: 0px 10px 5px;
+}
