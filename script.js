@@ -33,35 +33,80 @@ luffy.addEventListener("mouseover", playLuffyEyecatcher);
     function playLuffyEyecatcher() {
         luffyEyecatcher.play();
     }
+luffy.addEventListener("mouseout", stopLuffyEyecatcher);
+    function stopLuffyEyecatcher() {
+        luffyEyecatcher.pause();
+        luffyEyecatcher.currentTime = 0;
+    }
 zoro.addEventListener("mouseover", playZoroEyecatcher);
     function playZoroEyecatcher() {
         zoroEyecatcher.play();
+    }
+zoro.addEventListener("mouseout", stopZoroEyecatcher);
+    function stopZoroEyecatcher() {
+        zoroEyecatcher.pause();
+        zoroEyecatcher.currentTime = 0;
     }
 nami.addEventListener("mouseover", playNamiEyecatcher);
     function playNamiEyecatcher() {
         namiEyecatcher.play();
     } 
+nami.addEventListener("mouseout", stopNamiEyecatcher);
+    function stopNamiEyecatcher() {
+        namiEyecatcher.pause();
+        namiEyecatcher.currentTime = 0;
+    }
 usopp.addEventListener("mouseover", playUsoppEyecatcher);
     function playUsoppEyecatcher() {
         usoppEyecatcher.play();
     }
+usopp.addEventListener("mouseout", stopUsoppEyecatcher);
+    function stopUsoppEyecatcher() {
+        usoppEyecatcher.pause();
+        usoppEyecatcher.currentTime = 0;
+    }
 sanji.addEventListener("mouseover", playSanjiEyecatcher);
     function playSanjiEyecatcher() {
         sanjiEyecatcher.play();
+    }
+sanji.addEventListener("mouseout", stopSanjiEyecatcher);
+    function stopSanjiEyecatcher() {
+        sanjiEyecatcher.pause();
+        sanjiEyecatcher.currentTime = 0;
     } 
 chopper.addEventListener("mouseover", playChopperEyecatcher);
     function playChopperEyecatcher() {
         chopperEyecatcher.play();
     }
+chopper.addEventListener("mouseout", stopChopperEyecatcher);
+    function stopChopperEyecatcher() {
+        chopperEyecatcher.pause();
+        chopperEyecatcher.currentTime = 0;
+    }
 robin.addEventListener("mouseover", playRobinEyecatcher);
     function playRobinEyecatcher() {
         robinEyecatcher.play();
+    }
+robin.addEventListener("mouseout", stopRobinEyecatcher);
+    function stopRobinEyecatcher() {
+        robinEyecatcher.pause();
+        robinEyecatcher.currentTime = 0;
     }
 franky.addEventListener("mouseover", playFrankyEyecatcher);
     function playFrankyEyecatcher() {
         frankyEyecatcher.play();
     } 
+franky.addEventListener("mouseout", stopFrankyEyecatcher);
+    function stopFrankyEyecatcher() {
+        frankyEyecatcher.pause();
+        frankyEyecatcher.currentTime = 0;
+    } 
 brook.addEventListener("mouseover", playBrookEyecatcher);
     function playBrookEyecatcher() {
         brookEyecatcher.play();
+    }
+brook.addEventListener("mouseout", stopBrookEyecatcher);
+    function stopBrookEyecatcher() {
+        brookEyecatcher.pause();
+        brookEyecatcher.currentTime = 0;
     }
