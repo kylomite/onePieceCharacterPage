@@ -28,7 +28,7 @@ let brookEyecatcher = document.querySelector("#brookEyecatcher");
 }*/
 
 
-
+/*
 luffy.addEventListener("mouseover", playLuffyEyecatcher);
     function playLuffyEyecatcher() {
         luffyEyecatcher.play();
@@ -110,3 +110,27 @@ brook.addEventListener("mouseout", stopBrookEyecatcher);
         brookEyecatcher.pause();
         brookEyecatcher.currentTime = 0;
     }
+*/
+function play() {
+    alert("test");
+}
+function soundEffect(){
+    let crew = [];
+    let page = document.getElementsByClassName("character");
+    for (let i = 0; i < page.length; i++){
+        crew.push(page[i].id)
+    }
+    console.log(crew);
+    for(let i = 0; i < crew.length; i++){
+        let name = crew[i];
+        let ELL1 = name + ".addEventListener(\"mouseover\", play" + name + "Eyecatcher);"
+        let ELL2 = name + ".addEventListener(\"mouseout\", stop" + name + "Eyecatcher);"
+        let FD1 = "function play" + name + "Eyecatcher() {" + name + "Eyecatcher.play();}"
+        let FD2 = "function stop" + name + "Eyecatcher() {" + name + "Eyecatcher.pause(); " + name + "Eyecatcher.currentTime = 0;}"
+        eval(FD1);
+        eval(FD2);
+        eval(ELL1);
+        eval(ELL2);
+    }
+}
+soundEffect()
